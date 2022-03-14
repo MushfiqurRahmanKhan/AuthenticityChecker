@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authenticity Checker/Contact us</title>
+    <link rel='shortcut icon' type='image/svg' href='images/favicon.svg'>
+    <link rel='stylesheet' type='text/css' href='contactusstyle.css'>     
+</head>
+<body>
+	<div class="full-page">
+        <div class="navbar">
+            <div>
+                <a href='index.html'>
+                    ​<img src="images/logo.svg" alt="logo" width="250" height="100">
+                    </a>
+            </div>
+            <nav>
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="userguide.html"><li>User guide</li></a>
+                        <a href="aboutus.html"><li>About us</li></a>
+                        <a href="contactus.html"><li>Contact us</li></a> 
+                        <a href="form.html"><li>Login/Registration</li></a>
+                    </ul>
+              </div>
+            </nav>
+        </div> 
+    </div>
+	<div class="details">
+        <h1>Contact Us</h1>
+                <hr><br>
+                <p> You can contact us for 
+                    suggestions. We Welcome your feedback. 
+                    This will help us to improve User Experience. 
+                    You can share ideas how we can improve website. 
+                    If you find any errors in article, you can also notify us.
+                    We’ll read every feedback from you and will try to answer most of these.</p>
+                    <div class="container">
+                        <form id="contract-form" method="POST" action="contactus.php">
+                            <ul>
+                                <li>
+                                    <label for="name"><span>Name <span class="required-star">*</span></span></label>
+                                    <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                                </li>
+                                <li>
+                                    <label for="mail"><span>Email <span class="required-star">*</span></span></label>
+                                    <input name="mail" type="email" class="form-control" placeholder="Your Email" required>
+                                </li>
+                                <li>
+                                    <label for="msg"><span>Message</span></label>
+                                    <textarea rows="4" cols="50" name="msg" class="form-control" placeholder="Message" required></textarea>
+                                </li>
+                                <li>
+                                    <input type="submit" class="form-control submit" value="Send Message">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>                    
+	</div>
+</body>
+</html>>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authenticity Checker/Login,Registration</title>
+	<link rel='shortcut icon' type='image/svg' href='images/favicon.svg'>
+    <link rel='stylesheet' type='text/css' href='formstyle.css'>
+    
+</head>
+<body>
+	<div class="full-page">
+		<div class="navbar">
+			<div>
+				<a href='index.html'>
+					​<img src="images/logo.svg" alt="logo" width="250" height="100">
+					</a>
+			</div>
+			<nav>
+				<div id="menuToggle">
+					<input type="checkbox" />
+					<span></span>
+					<span></span>
+					<span></span>
+					<ul id="menu">
+						<a href="index.html"><li>Home</li></a>
+						<a href="userguide.html"><li>User guide</li></a>
+						<a href="aboutus.html"><li>About us</li></a>
+						<a href="contactus.html"><li>Contact us</li></a> 
+						<a href="form.html"><li>Login/Registration</li></a>
+					</ul>
+			  </div>
+			</nav>
+		</div> 
+	</div>
+	<div class="guide">
+		<h2>Login/Registration</h2>
+		    <hr>
+			<br>
+	</div>
+	<div class="container">
+		<div class="login-wrap">
+			<div class="login-html">
+			    <br><br><br><br>
+					<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+					<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registration</label> 
+					    <div class="login-form">
+							<div class="sign-in-htm">
+								<br>
+									<div class="group">
+
+										<form action="login.php" method="POST">
+										<label for="user1" class="label">Username</label>										
+										<input id="user1" type="text" class="input" name="user1" placeholder="User Name">
+									</div>
+									<div class="group">
+										<label for="pass1" class="label">Password</label>
+										<input id="pass1" type="password" class="input" data-type="password" name="pass1" placeholder="Password">
+									</div>
+									<div class="group">
+									<input id="check" type="checkbox" class="check" checked>
+									<label for="check"><span class="icon"></span> Keep me Logged in</label>
+									</div><br>
+									<div class="group">
+										<input type="submit" class="button" value="Login" name="login">
+									
+									</div>
+									<div class="hr"></div>
+									<div class="foot-lnk">
+										<a href="#forgot">Forgot Password?</a><br><br><br><br>
+									</div>
+								</form>
+
+							</div>
+							<div class="sign-up-htm">
+								<br>
+								<form action="signup.php" method="POST">
+									<div class="group">
+										<label for="user" class="label">Username*</label>
+										<input id="user" type="text" class="input" name="user" placeholder="use only lowercase letters & numbers">
+										
+									</div>
+									<div class="group">
+										<label for="pass" class="label">Password*</label>
+										<input id="pass" type="password" class="input" name="pass" data-type="password" placeholder="must contain mixture of random charecters">
+
+									</div>
+									<div class="group">
+										<label for="phone_number" class="label">Phone Number*</label>
+										
+										<input id="phone_number" type="tel" class="input" name="phone_number" data-type="tel" placeholder="ex. +8801234567890">
+									</div>
+									<div class="group">
+										<label for="email" class="label">Email Address*</label>
+
+										<input id="email" type="text" class="input" name="email" placeholder="ex. authenticitychecker@email.com"> 
+									</div>
+									<div class="group">
+										<label for="res_as" class="label">Registration as*</label><br>
+										<input type="radio" id="consumer" name="registration" value="consumer">
+										<label for="consumer">Consumer</label>
+										<input type="radio" id="company" name="registration" value="company">
+										<label for="company">Company</label>
+									</div>
+									<div class="group">
+										
+										<input type="submit" name="submit" class="button" value="registration"> 
+									</div>
+									<br>
+									<div class="foot-lnk">
+										<label for="tab-1">Already Member?</a>
+									</div>
+								</form>
+							</div>
+						</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
